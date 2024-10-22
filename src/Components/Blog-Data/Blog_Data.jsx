@@ -4,7 +4,7 @@ import Show_Blog from "../Show-Blog/Show_Blog";
 import PropTypes from 'prop-types';
 
 
-const Blog_Data = ({handlerBookmark , handleTime}) => {
+const Blog_Data = ({handlerBookmark , handleTime }) => {
     const [blogData, setBlogData] = useState([])
     useEffect(() => {
         fetch('blog.json')
@@ -27,5 +27,6 @@ const Blog_Data = ({handlerBookmark , handleTime}) => {
 
 Blog_Data.propTypes = {
     handlerBookmark: PropTypes.func.isRequired,
+    handleTime: PropTypes.func.isRequired,
 }
 export default Blog_Data;
